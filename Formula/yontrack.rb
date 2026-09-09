@@ -4,7 +4,7 @@
 class Yontrack < Formula
   desc "Command line interface for Yontrack"
   homepage "https://github.com/yontrack/yontrack-cli"
-  version "5.4.3"
+  version "5.5.0"
   license "MIT"
 
   # The released binary rather than a build from source: see
@@ -14,23 +14,23 @@ class Yontrack < Formula
   # file named for its asset, which is what install picks up below.
   on_macos do
     on_arm do
-      url "https://github.com/yontrack/yontrack-cli/releases/download/5.4.3/yontrack-darwin-arm64", using: :nounzip
-      sha256 "15ab93b7da2b47b09b3074fc4fd5ed5f28c8a3e9e7a7c11eabe08397f6e67526"
+      url "https://github.com/yontrack/yontrack-cli/releases/download/5.5.0/yontrack-darwin-arm64", using: :nounzip
+      sha256 "6411ffb0d89a4db21b430a04b461f20131eaed2c0c4eafb13d27783244188f11"
     end
     on_intel do
-      url "https://github.com/yontrack/yontrack-cli/releases/download/5.4.3/yontrack-darwin-amd64", using: :nounzip
-      sha256 "02b38f45e76173b09ab0053f35e2d1ee05f392198c2324092e98bc46286230ee"
+      url "https://github.com/yontrack/yontrack-cli/releases/download/5.5.0/yontrack-darwin-amd64", using: :nounzip
+      sha256 "08a5e21398c4eab908c9688a15dc605d92f66fa998d6ce45d66faa74b049858b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/yontrack/yontrack-cli/releases/download/5.4.3/yontrack-linux-arm64", using: :nounzip
-      sha256 "c8ebd3bdc43339d0e9a0b9bb615b324b6e4522d1533200b2f57ca9ed9623cc14"
+      url "https://github.com/yontrack/yontrack-cli/releases/download/5.5.0/yontrack-linux-arm64", using: :nounzip
+      sha256 "e20bd3cfbd12d39d9e0947481f221a770bf9fa93e2e470a8135720d9832810a8"
     end
     on_intel do
-      url "https://github.com/yontrack/yontrack-cli/releases/download/5.4.3/yontrack-linux-amd64", using: :nounzip
-      sha256 "b5038753696f0e88ec679281ad9513d27f288ecf742adc2812b9504752c06581"
+      url "https://github.com/yontrack/yontrack-cli/releases/download/5.5.0/yontrack-linux-amd64", using: :nounzip
+      sha256 "318379c76abca45258f24a89c6a524874019545ed7481b5e6e7dc607ade38018"
     end
   end
 
