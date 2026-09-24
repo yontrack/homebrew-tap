@@ -4,7 +4,7 @@
 class Yontrack < Formula
   desc "Command line interface for Yontrack"
   homepage "https://github.com/yontrack/yontrack-cli"
-  version "5.7.0"
+  version "5.8.0"
   license "MIT"
 
   # Poured instead of running the install block below. Homebrew treats a
@@ -17,8 +17,8 @@ class Yontrack < Formula
   # Honest here only because the payload is a static binary with no SDK
   # coupling — see docs/adr/0003-homebrew-bottles.md.
   bottle do
-    root_url "https://github.com/yontrack/yontrack-cli/releases/download/5.7.0"
-    sha256 cellar: :any_skip_relocation, arm64_ventura: "eea1e004a51232277ac0e7744ce381a6638309edf35c9e44daa42c8722da6ade"
+    root_url "https://github.com/yontrack/yontrack-cli/releases/download/5.8.0"
+    sha256 cellar: :any_skip_relocation, arm64_ventura: "4275f81c8de3f734c4605cb17e67b3e093a48b90be4e4621bbc828892b475273"
   end
 
   # The released binary rather than a build from source: see
@@ -28,23 +28,23 @@ class Yontrack < Formula
   # file named for its asset, which is what install picks up below.
   on_macos do
     on_arm do
-      url "https://github.com/yontrack/yontrack-cli/releases/download/5.7.0/yontrack-darwin-arm64", using: :nounzip
-      sha256 "04a79f653621a3d39fc8cee324a8667a8f5cf7a051a0f6337c2b68191daa2405"
+      url "https://github.com/yontrack/yontrack-cli/releases/download/5.8.0/yontrack-darwin-arm64", using: :nounzip
+      sha256 "28cba0b256968902e5962475a98ce075bdc170c5fe771cedb0e2d62d0a4833cb"
     end
     on_intel do
-      url "https://github.com/yontrack/yontrack-cli/releases/download/5.7.0/yontrack-darwin-amd64", using: :nounzip
-      sha256 "ae966a455fc720fd16bfee75653204815edd50832ec7e22b71729d46492e5cdf"
+      url "https://github.com/yontrack/yontrack-cli/releases/download/5.8.0/yontrack-darwin-amd64", using: :nounzip
+      sha256 "a26829e5e2a4bbd4a425b932ee8557bbef5923ee0cbd65d0df42f4cb5f1794c2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/yontrack/yontrack-cli/releases/download/5.7.0/yontrack-linux-arm64", using: :nounzip
-      sha256 "376b68351cb1e53d0f7c0ea81f011b3b9d3a197d7cb3db3bb5118a1fa8ee7d90"
+      url "https://github.com/yontrack/yontrack-cli/releases/download/5.8.0/yontrack-linux-arm64", using: :nounzip
+      sha256 "26f4069b76f8ac44a6c57b706b74fb0435fda36bcf707b279831bb5224267868"
     end
     on_intel do
-      url "https://github.com/yontrack/yontrack-cli/releases/download/5.7.0/yontrack-linux-amd64", using: :nounzip
-      sha256 "482959e109615cc3cd2a4847aa49ed775646803d8e49d24adbe9ebaa99a38a76"
+      url "https://github.com/yontrack/yontrack-cli/releases/download/5.8.0/yontrack-linux-amd64", using: :nounzip
+      sha256 "826573ce44a29f62c710f99c25185658ed60f86c93e47aad56538d96e008ece3"
     end
   end
 
